@@ -21,6 +21,9 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  output: 'export', // خروجی استاتیک برای GitHub Pages
+  basePath: '/my-resume', // نام ریپازیتوری در GitHub
+  assetPrefix: '/my-resume/', // برای لود شدن صحیح استایل‌ها و اسکریپت‌ها
 }
 
 mergeConfig(nextConfig, userConfig)
